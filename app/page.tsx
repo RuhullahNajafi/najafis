@@ -7,10 +7,10 @@ export default function Home() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [particles] = useState(() => 
     [...Array(20)].map(() => ({
-      x1: Math.random() * 1920,
-      x2: Math.random() * 1920,
-      y1: Math.random() * 1080,
-      y2: Math.random() * 1080,
+      x1: Math.random() * 100,
+      x2: Math.random() * 100,
+      y1: Math.random() * 100,
+      y2: Math.random() * 100,
       duration: Math.random() * 10 + 10,
     }))
   );
@@ -32,8 +32,8 @@ export default function Home() {
             key={i}
             className="absolute w-1 h-1 bg-blue-400 rounded-full opacity-30"
             animate={{
-              x: [particle.x1, particle.x2],
-              y: [particle.y1, particle.y2],
+              x: [`${particle.x1}vw`, `${particle.x2}vw`],
+              y: [`${particle.y1}vh`, `${particle.y2}vh`],
             }}
             transition={{
               duration: particle.duration,

@@ -12,7 +12,7 @@ Personal portfolio showcasing my journey as a SAP Consultant, with educational b
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS 4
 - **Animations**: Framer Motion
-- **Font**: Geist Sans & Geist Mono
+- **Font**: System UI fonts
 
 ## Features
 
